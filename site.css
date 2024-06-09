@@ -1,0 +1,330 @@
+* {margin: 0;
+box-sizing: border-box;}
+
+body{ display: flex;}
+
+#header {
+    width: 15%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-family: "Quicksand", sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+#header a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#header ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+li { margin-bottom: 20px;
+font-size: 13px;}
+
+#freefire:hover{
+    cursor: pointer;
+    color: #df0e62;
+    transition: 0.3s;
+}
+
+#header svg{
+    fill: white;
+    height: 13px;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+#icones svg:hover {
+    cursor: pointer;
+    fill: #df0e62;
+    transition: 0.3s;
+}
+
+
+
+#principal {
+    background-image: url(imagens/img_9.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+
+    width: 85%;
+}
+#botao:hover{
+    filter: brightness(85%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#welcome {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: brightness(60%);
+    color: white;
+}
+
+#welcome h1 { font-family: "Oswald", sans-serif;
+font-weight: 400;
+font-size: 64px;}
+
+#welcome p {
+    width: 60%;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+}
+
+#welcome a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    width: 163px;
+    height: 53px;
+    background-color: #df0e64;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+#fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    row-gap: 6px;
+}
+#fotos div {
+    width: 33%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#fotos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#fotos div:hover img{
+    filter: brightness(50%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#fotos div svg {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    height: 20px;
+    fill: white;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.3s;
+}
+#fotos div:hover svg{
+    opacity: 1;
+    top: 50%;
+}
+#testimonial{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 110px;
+    color: white;
+    background-color: black;
+}
+#testimonialh1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+}
+#testimonial img{
+    margin-top: 50px;
+    height: 160px;
+    border-radius: 50%;
+    
+}
+#testimonialnome{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+#testimoniallorem{
+    text-align: center;
+    color: gray;
+    font-family: "Quicksand", sans-serif;
+    padding-top: 1rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    font-size: 1rem;
+}
+#biography{
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 110px;
+    color: white;
+    background-color: #1a1a1a;
+}
+#biographyh1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    margin-right: 500px;
+}
+#biography img{
+    height: 400px;
+    margin-right: 375px;
+    margin-top: 45px;
+    border-radius: 2%;
+}
+#biography1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+    margin-right: 660px;
+    margin-top: 40px;
+}
+#rosa{
+    color: #df0e62;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}
+#biography2{
+    font-family: "Quicksand", sans-serif;
+    color: gray;
+    font-size: 1rem;
+    margin-left: 285px;
+    margin-right: 285px;
+    margin-top: 10px;
+}
+#biography3{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+    margin-right: 470px;
+    margin-top: 50px;
+}
+#biography svg{
+    fill: #8bc34a;
+    height: 18px;
+}
+
+#biography4{
+    font-family: "Quicksand", sans-serif;
+    color: gray;
+    font-size: 1rem;
+    margin-left: 285px;
+    margin-right: 285px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#blog{
+    height: 170vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    color: white;
+    background-color: black;
+}
+#blogh1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    margin-right: 650px;
+    margin-bottom: 3rem;
+}
+#fotos2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+#fotos2 img{
+    height: 200px;
+}
+#blog1{
+    display: flex;
+}
+#blog1h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 350;
+    font-size: 25px;
+    margin-left: 3rem;
+}
+#blogp{
+    font-family: "Quicksand", sans-serif;
+    color: gray;
+    font-size: 1rem;
+}
+#blogp1{
+    display: flex;
+}
+#contact{
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    color: white;
+    background-color: #212529;
+}
+#contacth1{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    margin-right: 540px;
+    margin-bottom: 3rem;
+}
+#blogp{
+    font-family: "Quicksand", sans-serif;
+    color: gray;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+#contact div p{
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+#linha1{
+    display: flex;
+}
+#sendmessage{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: "Quicksand", sans-serif;
+    width: 163px;
+    height: 53px;
+    background-color: #df0e64;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+#sendmessage:hover{
+    filter: brightness(85%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+#campos{
+    align-content: left;
+}
